@@ -1,0 +1,45 @@
+version: '3'
+
+services:
+   
+    php:
+        build: 
+          context: .
+          dockerfile: /Users/marcus/lab/php/Dockerfile
+        container_name: php
+        volumes:
+            - ~/lab/html:/var/www/html
+        networks:
+            - bridge
+        
+    web:
+        image: nginx:latest
+        container_name: web
+        ports:
+            - "81:80"
+        volumes:
+            - ~/lab/conf:/etc/nginx/conf.d
+            - ~/lab/html:/usr/share/nginx/html
+        networks:
+            - bridge
+        depends_on:
+            - php   
+        
+    
+    mysql-dev:
+        image: mariadb:latest
+        container_name: mysql-dev
+        command: --init-file /docker-entrypoint/init.db.d/init.sql
+        volumes: 
+            -  ./db-init/init.sql:/docker-entrypoint/init.db.d/init.sql
+        environment:
+            MYSQL_ROOT_PASSWORD: "s3cr3t"
+            MYSQL_DATABASE: "testapp"
+        networks:
+            - bridge
+        depends_on:
+            - php
+    
+networks:
+  bridge:
+    driver: bridge
