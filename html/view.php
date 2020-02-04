@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+<a href='index.php'>Home</a><br>
+
+<h2>View User</h2>
+
 <?php
 include_once('mysql.php');
 
@@ -11,12 +18,6 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 ?>
-<!DOCTYPE html>
-<html>
-<body>
-<a href='index.php'>Home</a><br>
-
-<h2>View User</h2>
 
 </body>
 </html>
