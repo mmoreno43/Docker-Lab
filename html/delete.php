@@ -18,10 +18,13 @@ if (isset($_POST['id'])) {
 
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
 <a href='index.php'>Home</a><br>
 
-<h2>Delete User</h2>
+<h2>Delete Guests</h2>
 
 <form action="/delete.php" method="post">
   Guest ID:<br>
