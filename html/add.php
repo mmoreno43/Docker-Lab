@@ -20,10 +20,13 @@ VALUES ('$_POST[firstname]','$_POST[lastname]','$_POST[phone]')";
 
 <!DOCTYPE html>
 <html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
 <a href='index.php'>Home</a><br>
 
-<h2>Add User</h2>
+<h2>Add Guests</h2>
 
 <form action="/add.php" method="post">
   First name:<br>
