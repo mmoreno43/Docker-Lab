@@ -1,5 +1,5 @@
 <?php
-$servername = "mysql-dev";
+$servername = "mariadb";
 $username = "root";
 $password = "s3cr3t";
 $dbname = "testapp";
