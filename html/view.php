@@ -7,12 +7,12 @@
 
 <h2>View Guests</h2>
 
-<table class="striped">
-            <tr class="header">
-                <td>ID</td>
-                <td>Firstname</td>
-                <td>Lastname</td>
-                <td>Phone Number</td>
+<table>
+            <tr>
+                <th>ID</th>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Phone Number</th>
             </tr>
 <?php
 include_once('mysql.php');
