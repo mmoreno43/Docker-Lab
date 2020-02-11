@@ -4,8 +4,8 @@ services:
    
     php:
         build: 
-          context: .
-          dockerfile: php/Dockerfile
+          context: ./php
+          dockerfile: Dockerfile
         container_name: php
         volumes:
             - ~/lab/html:/var/www/html
@@ -26,15 +26,14 @@ services:
             - php   
         
     
-    mysql-dev:
+    mariadb:
         image: mariadb:latest
-        container_name: mysql-dev
+        container_name: mariadb
         command: --init-file /docker-entrypoint/init.db.d/init.sql
         volumes: 
             -  ./db-init/init.sql:/docker-entrypoint/init.db.d/init.sql
         environment:
             MYSQL_ROOT_PASSWORD: "s3cr3t"
-            MYSQL_DATABASE: "testapp"
         networks:
             - bridge
         depends_on:
