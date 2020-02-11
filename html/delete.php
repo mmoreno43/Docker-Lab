@@ -1,10 +1,5 @@
 <?php
-
 include_once('mysql.php');
-#
-##$sql = "DELETE FROM MyGuests WHERE id=1 LIMIT 1";
-##
-
 // make sure that form is submitted    
 if (isset($_POST['id'])) {
 
