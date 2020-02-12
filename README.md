@@ -16,7 +16,7 @@ By default, PHP is missing the mysqli component. The Dockerfiles creates a custo
 
 ## web.conf
 
-We create this file to define our server block in Nginx and how Nginx will work.
+By creating this file we define our server block in Nginx and how Nginx will work.
 
 ## init.sql
 
