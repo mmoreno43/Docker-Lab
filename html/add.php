@@ -23,24 +23,29 @@ VALUES ('$_POST[firstname]','$_POST[lastname]','$_POST[phone]')";
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-<a href='index.php'>Home</a><br>
-
-<h2>Add Guests</h2>
-
-<form action="/add.php" method="post">
-  First name:<br>
-  <input type="text" name="firstname" >
-  <br>
-  Last name:<br>
-  <input type="text" name="lastname" >
-  <br>
-  Phone number:<br>
-  <input type="text" name="phone" >
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
-
+<div class ="wrapper">
+    <div class="add">
+        <div class="project">
+            <body>
+                <a href='index.php'>Home</a><br>
+            <h2>Add Guests</h2>
+                <div class="container">
+                    <form action="/add.php" method="post">
+                        First name:<br>
+                        <input type="text" name="firstname" >
+                        <br>
+                        Last name:<br>
+                        <input type="text" name="lastname" >
+                        <br>
+                        Phone number:<br>
+                        <input type="text" name="phone" >
+                        <br><br>
+                       <input type="submit" value="Submit">
+                    </form>
+                </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 

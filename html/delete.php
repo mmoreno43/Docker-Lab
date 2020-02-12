@@ -16,17 +16,22 @@ if (isset($_POST['id'])) {
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
-<a href='index.php'>Home</a><br>
-
-<h2>Delete Guests</h2>
-
-<form action="/delete.php" method="post">
-  Guest ID:<br>
-  <input type="text" name="id" >
-  <br><br>
-  <input type="submit" value="Submit">
-</form> 
-
+<div class="wrapper">
+    <div class="delete">
+        <div class="project">
+            <body>
+                <a href='index.php'>Home</a><br>
+            <h2>Delete Guests</h2>
+                <div class="container">
+                   <form action="/delete.php" method="post">
+                   Guest ID:<br>
+                   <input type="text" name="id" >
+                   <br><br>
+                   <input type="submit" value="Submit">
+                   </form>
+                </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
