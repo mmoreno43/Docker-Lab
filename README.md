@@ -22,8 +22,8 @@ By creating this file we define our server block in Nginx and how Nginx will wor
 
 At run time this file is used to create the following:
 
--Database
--Table
+- Database
+- Table
 
 # To run
 
