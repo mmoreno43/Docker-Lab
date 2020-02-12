@@ -2,10 +2,10 @@
 
 ## docker-compose yml
 The docker-compose file is made up of four parts:
-    - PHP
-    - Nginx
-    - Maria
-    - Networks
+- PHP
+- Nginx
+- Maria
+- Networks
 
 
 A network bridge allows the containers connected to the same bridge network to communicate with eachother. 
