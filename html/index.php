@@ -10,6 +10,7 @@
                 <div class="project_content">
                     <a href="add.php" class="button ad hover-blue-grey">Add Guests</a>
                     <a href="view.php" class="button vw hover-teal">View Guests</a>
+                    <a href="search.php" class="button vw hover-lightblue">Search Guests</a>
                     <a href="delete.php" class="button dl hover-dark-gray">Delete Guests</a>
                 </div>  
         </div>
