@@ -115,6 +115,16 @@ div.view{
   min-height:870px;
 }
 
+div.search{
+	float:left;                                                                        
+	width:98%;
+	color:black!important;
+  background-color:lightblue!important;
+	padding:0.01em 16px;
+	text-align:center!important;
+  min-height:870px;
+}
+
 div.delete {
 	float:left;
   width:98%;
@@ -175,6 +185,11 @@ div.project_content{
 .hover-teal:hover{
   color:#fff!important;
   background-color:#009688!important
+}
+
+.hover-lightblue:hover{
+  color:#fff!important;
+  background-color:lightblue!important
 }
 
 .hover-dark-gray:hover{
